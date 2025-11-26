@@ -1,14 +1,11 @@
-body
-{
-    background-image: url('../Images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* pode remover background-image do body se usar .background-blur */
 }
 
 .background-blur {
-    position: fixed; /* fica atrás do conteúdo e não se move */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -16,6 +13,45 @@ body
     background-image: url('../Images/background.png');
     background-size: cover;
     background-position: center;
-    filter: blur(8px); /* intensidade do blur */
-    z-index: -1; /* fica atrás do conteúdo */
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
