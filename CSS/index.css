@@ -174,3 +174,15 @@ aside ul li::marker {
     color: rgb(238, 238, 238); /* cor da bolinha */
     font-size: 14px; /* opcional: pode até aumentar a bolinha */
 }
+
+aside ul li {
+    opacity: 0.3;
+    transform: translateY(3px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+aside ul li:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
