@@ -129,11 +129,33 @@ footer {
     transform: (0.5);
 }
 
-.elemento {
-    border: 3px solid transparent;
-    transition: border-color 0.2s;
+/* Área com borda e posição configurada */
+.area {
+    position: relative;
+    border: 2px solid #ffffff88;  /* borda padrão */
+    border-radius: 8px;
+    padding: 20px;
 }
 
+/* Texto sobre a borda */
+.area .titulo-area {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background-color: rgba(20, 20, 20, 1); /* mesma cor do fundo */
+    padding: 0 8px;
+    font-size: 14px;
+    font-family: "DMMono", monospace;
+    color: #fff;
+}
+
+/* Classe que controla o hover */
+.elemento {
+    border-color: transparent;  /* mantém formato */
+    transition: border-color 0.2s ease;
+}
+
+/* Hover ativando a borda */
 .elemento:hover {
     border-color: #8a6aa2;
 }
