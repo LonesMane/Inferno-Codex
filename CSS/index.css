@@ -1,7 +1,63 @@
+/* Regular */
+@font-face {
+    font-family: "DMMono";
+    src: url("../Fonts/DMMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: "DMMono";
+    src: url("../Fonts/DMMono-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: "DMMono";
+    src: url("../Fonts/DMMono-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+    font-family: "DMMono";
+    src: url("../Fonts/DMMono-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Medium */
+@font-face {
+    font-family: "DMMono";
+    src: url("../Fonts/DMMono-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+    font-family: "DMMono";
+    src: url("../Fonts/DMMono-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+p
+{
+    font-family: "DMMono", monospace;
+    color: rgb(238, 238, 238);
+}
+
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    /* pode remover background-image do body se usar .background-blur */
+    background-image: url(../Images/background2.png);
 }
 
 .background-blur {
@@ -10,7 +66,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../Images/background.png');
+    background-image: url('../Images/background2.png');
     background-size: cover;
     background-position: center;
     filter: blur(8px);
@@ -22,73 +78,58 @@ body {
     grid-template-areas:
         "header header"
         "sidebar main"
+        "main2 main2"
         "footer footer";
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    min-height: 80vh;
     gap: 10px;
 }
 
-.container > *:not(header):not(footer):not(aside) {
-    background-color: rgba(76, 60, 50, 0.85); /* Branco semi-transparente */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efeito de flutuar */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container > *:not(header):not(footer):not(main) {
-    background-color: rgba(76, 60, 50, 0.85); /* Branco semi-transparente */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efeito de flutuar */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-
 header {
     grid-area: header;
-    background: linear-gradient(
-        to top,
-        rgba(45, 31, 23, 0) 0%,   /* transparente */
-        rgba(45, 31, 23, 1) 100% /* cor sólida */
-    );
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: rgba(20, 20, 20, 0.85);
+    font-family: "DMMOno", monospace;
+    padding-left: 20px;
+    border: 3px solid #8a6aa2;
 }
 
 aside {
     grid-area: sidebar;
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin-left: 20px;
+    background-color: rgba(20, 20, 20, 0.85);
+    font-family: "DMMOno", monospace;
+    padding-left: 20px;
+    border: 3px solid #8a6aa2;
 }
 
 main {
     grid-area: main;
-    background-color: #fff;
-    padding: 20px;
-    margin-right: 20px;
+    background-color: rgba(20, 20, 20, 0.85);
+    font-family: "DMMOno", monospace;
+    padding-left: 20px;
+    border: 3px solid #8a6aa2;
+}
+
+.main2 {
+    grid-area: main2;
+    background-color: rgba(20, 20, 20, 0.85);
+    font-family: "DMMOno", monospace;
+    padding-left: 20px;
+    border: 3px solid #8a6aa2;
 }
 
 footer {
     grid-area: footer;
-    background: linear-gradient(
-        to bottom,
-        rgba(45, 31, 23, 0) 0%,   /* transparente */
-        rgba(45, 31, 23, 1) 100% /* cor sólida */
-    );
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: rgba(20, 20, 20, 0.85);
+    font-family: "DMMOno", monospace;
+    padding-left: 20px;
+    border: 3px solid #8a6aa2;
 }
 
 .major
 {
     margin: 100px;
     padding: 10px;
-    background-color: black;
+    background-color: rgba(20, 20, 20, 0);
     transform: (0.5);
 }
