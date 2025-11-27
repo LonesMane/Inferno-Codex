@@ -52,7 +52,11 @@ p
     color: rgb(238, 238, 238);
 }
 
-
+h1
+{
+    font-family: "DMMono", monospace;
+    color: rgb(238, 238, 238);
+}
 
 body {
     margin: 0;
@@ -96,8 +100,8 @@ header {
 aside {
     grid-area: sidebar;
     background-color: rgba(20, 20, 20, 0.85);
-    font-family: "DMMOno", monospace;
-    padding-left: 20px;
+    font-family: "DMMono", monospace;
+    padding: 5px;
 }
 
 main {
@@ -142,7 +146,8 @@ footer {
     position: absolute;
     top: -12px;
     left: 20px;
-    background-color: rgba(20, 20, 20, 1); /* mesma cor do fundo */
+    background-color: rgba(20, 20, 20, 0.85); /* mesma cor do fundo */
+    border-radius: 5px;
     padding: 0 8px;
     font-size: 14px;
     font-family: "DMMono", monospace;
@@ -158,4 +163,14 @@ footer {
 /* Hover ativando a borda */
 .elemento:hover {
     border-color: #8a6aa2;
+}
+
+aside.area {
+    padding: 5px !important;
+    line-height: 0.7    ;
+}
+
+aside ul li::marker {
+    color: rgb(238, 238, 238); /* cor da bolinha */
+    font-size: 14px; /* opcional: pode até aumentar a bolinha */
 }
