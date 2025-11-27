@@ -91,7 +91,6 @@ header {
     background-color: rgba(20, 20, 20, 0.85);
     font-family: "DMMOno", monospace;
     padding-left: 20px;
-    border: 3px solid #8a6aa2;
 }
 
 aside {
@@ -99,7 +98,6 @@ aside {
     background-color: rgba(20, 20, 20, 0.85);
     font-family: "DMMOno", monospace;
     padding-left: 20px;
-    border: 3px solid #8a6aa2;
 }
 
 main {
@@ -107,7 +105,6 @@ main {
     background-color: rgba(20, 20, 20, 0.85);
     font-family: "DMMOno", monospace;
     padding-left: 20px;
-    border: 3px solid #8a6aa2;
 }
 
 .main2 {
@@ -115,7 +112,6 @@ main {
     background-color: rgba(20, 20, 20, 0.85);
     font-family: "DMMOno", monospace;
     padding-left: 20px;
-    border: 3px solid #8a6aa2;
 }
 
 footer {
@@ -123,7 +119,6 @@ footer {
     background-color: rgba(20, 20, 20, 0.85);
     font-family: "DMMOno", monospace;
     padding-left: 20px;
-    border: 3px solid #8a6aa2;
 }
 
 .major
@@ -132,4 +127,13 @@ footer {
     padding: 10px;
     background-color: rgba(20, 20, 20, 0);
     transform: (0.5);
+}
+
+.elemento {
+    border: 3px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.elemento:hover {
+    border-color: #8a6aa2;
 }
