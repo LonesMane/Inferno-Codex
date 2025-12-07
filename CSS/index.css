@@ -46,17 +46,20 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "Bebas";
+    src: url("../Fonts/BebasKai.otf") format("opentype");
+}
+
 p
 {
-    font-family: "DMMono", monospace;
-    /*color: rgb(238, 238, 238);*/
+    font-family: "Bebas", sans-serif;
     color: whitesmoke;
 }
 
 h1
 {
-    font-family: "DMMono", monospace;
-    /*color: rgb(238, 238, 238);*/;
+    font-family: "Bebas", sans-serif;
     color: whitesmoke;
 }
 
@@ -185,7 +188,7 @@ footer
     margin: 0 10px 10px 0;
     color: whitesmoke;
     order: -1;
-    font-family: DMMono, monospace;
+    font-family: Bebas, sans-serif;
 }
 
 .card-link
