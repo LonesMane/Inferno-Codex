@@ -49,19 +49,145 @@
 p
 {
     font-family: "DMMono", monospace;
-    color: rgb(238, 238, 238);
+    /*color: rgb(238, 238, 238);*/
+    color: #e9ddff;
 }
 
 h1
 {
     font-family: "DMMono", monospace;
-    color: rgb(238, 238, 238);
+    /*color: rgb(238, 238, 238);*/;
+    color: #e9ddff;
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url(../Images/background2.png);
+    background-color: #BFA5FF;
 }
 
+#container
+{
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'banner banner'
+    'article article'
+    'section section'
+    'footer footer'
+    ;
+}
 
+header
+{
+    grid-area: header;
+    background-color: #7A3EB1;
+    padding-left: 10px;
+}
+
+aside
+{
+    grid-area: aside;
+    background-color: #7A3EB1;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+article
+{
+    grid-area: article;
+    background-color: #7A3EB1;
+    display: flex;        /* coloca os cards lado a lado */
+    flex-wrap: wrap;      /* permite quebrar linha */
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+section
+{
+    grid-area: section;
+    background-color: #7A3EB1;
+}
+
+footer
+{
+    grid-area: footer;
+    background-color: #7A3EB1;
+}
+
+.banner
+{
+    grid-area: banner;
+    background-color: #7A3EB1;
+}
+
+.bannerzinho
+{
+    width: 100%;
+    height: auto;
+}
+
+.card
+{
+    background-color: #BFA5FF;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: pointer;
+}
+
+.card:hover
+{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card-icon
+{
+    background-color: #e9ddff;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-icon span {
+    font-size: 36px;
+    color: #5A2A82;
+}
+
+.guide-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #3A1F5D;
+}
+
+.guide-info p {
+    margin: 5px 0 0 0;
+    color: #6b6b6b;
+    font-size: 0.95rem;
+}
+
+.article-title
+{
+    width: 100%;
+    text-align: left;
+    margin: 0 10px 10px 0;
+    color: #e9ddff;
+    order: -1;
+    font-family: DMMono, monospace;
+}
+
+.card-link
+{
+    text-decoration: none;
+    color: inherit;
+}

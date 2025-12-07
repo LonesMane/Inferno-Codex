@@ -1,0 +1,2 @@
+Roxo default: 		#7A3EB1
+Roxo mais claro: 	#BFA5FF
